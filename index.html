@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Подсчёт гарантии</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="v100">
+    <div class="header">
+        <div class="row">
+            <div class="col col-100">
+                <h1>Подсчёт гарантии</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col col-100">
+                <div class="calculatorDate">
+                    <div class="dataBlock">
+                        <div class="infoBlock">
+                            <h3>Текущая гарантия</h3>
+                            <div class="taking">
+                                <label for="">Дата первой приёмки ВП</label><br>
+                                <input type="text" onfocus="(this.type='date')" name="taking_date" id="taking_date" placeholder="12 Июл 2020">
+                            </div>
+                            <div class="count">
+                                <label for="">Гарантийный срок (лет)</label><br>
+                                <div class="counterManage">
+                                    <button class="countSymbol" id="minus">-</button>
+                                    <input class="customCounter" type="number" value="1" size="5" id="count">
+                                    <button class="countSymbol" id="plus">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="infoBlock">
+                            <h3>Срок ремонта</h3>
+                            <div class="noticifation">
+                                <label for="">Дата уведомления</label><br>
+                                <input type="text" onfocus="(this.type='date')" name="notification_date" id="notification_date" placeholder="12 Июл 2020">
+                            </div>
+                            <div class="end_repair">
+                                <label for="">Повторная дата приёмки ВП</label><br>
+                                <input type="text" onfocus="(this.type='date')" name="end_repair" id="end_repair" placeholder="12 Июл 2020">
+                            </div>
+                        </div>
+                        <div class="resultDisplay">
+                            <p class="guaranteeUntil">Гарантия продлена до:</p>
+                            <h3 class="newGuarantee"></h3>
+                        </div>
+                    </div>
+                    <button id="countButton">Рассчитать</button>
+                </div>       
+            </div>
+        </div>    
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

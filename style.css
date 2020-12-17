@@ -1,0 +1,188 @@
+*, html, body{
+    font-family: Proba Pro;
+    margin: 0;
+    padding: 0;
+
+}
+
+.v100{
+    min-height: 100vh;
+}
+
+h1{
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.header {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.09);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+h3{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+label{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 12px 0;
+}
+
+.taking, .noticifation{
+    margin: 12px 0;
+}
+
+#countButton {
+    background: #2D9CDB;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 18px 0;
+    width: 100%;
+    margin-bottom: 24px;
+    align-self: flex-end;
+}
+
+.calculatorDate{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 89vh;
+}
+
+.infoBlock{
+    padding: 28px 0 0;
+    
+}
+
+input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 14px 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 8px;
+
+}
+
+#minus {
+    border-radius: 5px 0px 0px 5px;
+}
+
+#plus {
+    border-radius: 0px 5px 5px 0px;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+    appearance: textfield;
+    margin: 0;
+    border-radius: 0%;
+    border: 1px solid #2D9CDB;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+ 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+    margin: 0;
+}
+
+.counterManage{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin-top: 8px;
+
+}
+
+.countSymbol{
+	padding: 14px;
+	font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    border: none;
+    background: #2D9CDB;
+    color: #FFFFFF;
+}
+
+.resultDisplay{
+    display: none;
+    padding: 16px 0;
+}
+
+.showBlock {
+    display: block;
+}
+
+.hideBlock {
+    display: none;
+}
+
+.error {
+    color: crimson;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.row {
+    margin: 0 12px;
+}
+
+.col {
+	float: left;
+	padding: 0 12px;
+	box-sizing: border-box;
+}
+
+.col-100{
+	width: 100%;
+}
+
+.col-50{
+	width: 50%;
+}
+
