@@ -20,7 +20,7 @@ countButton.onclick =  function finalDate (){
     guaranteeDate.setFullYear(guaranteeDate.getFullYear() + parseFloat(count.value));
     let noteDate = new Date(notificationDate.value);
     let endDate = new Date(endRepair.value);
-    let difference = (endDate - noteDate) / (3600 * 1000 * 24);
+    let difference = ((endDate - noteDate) / (3600 * 1000 * 24)) + 1;
     guaranteeDate.setDate(guaranteeDate.getDate() + difference);
     newGuarantee.textContent = guaranteeDate.toLocaleString("ru", options);
     resultDisplay.classList.add('showBlock');
